@@ -23,21 +23,21 @@ namespace PS1B___Tema_10___Ciobanu_Victor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double number;
+            double number, error, x1 = 0; 
+            int count = 0;
             if (!Double.TryParse(textNumber.Text, out number))
                 errorProvider1.SetError(textNumber, "Nu e numar");
             else
                 errorProvider1.Clear();
-            double error = 0.001f;
             if (!Double.TryParse(textError.Text, out error))
                 errorProvider2.SetError(textError, "Nu e numar");
             else
                 errorProvider2.Clear();
-            double x1 = 0;
-            int count = 0;
             Class1.Radical(number, error, ref x1, ref count);
             textSqrt.Text = Convert.ToString(x1);
+            textSqrt2.Text = Convert.ToString(Math.Sqrt(number));
             textIterations.Text = Convert.ToString(count);
+            textDifference.Text = Convert.ToString(x1 - Math.Sqrt(number));
         }
     }
 }
