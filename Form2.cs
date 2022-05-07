@@ -108,10 +108,10 @@ namespace PS1B___Tema_10___Ciobanu_Victor
             int count = 0;
             Dictionary<int, int> hash = new Dictionary<int, int>();
 
-            progressBar1.Minimum = 0;
-            progressBar1.Maximum = nr_values + 1;
-            progressBar1.Value = 0;
-            progressBar1.Step = 1;
+            progressBar.Minimum = 0;
+            progressBar.Maximum = nr_values;
+            progressBar.Value = 0;
+            progressBar.Step = 1;
             if (val1 && val2 && val3 && val4)
             {
                 for (int i = 0; i < nr_values; i++)
@@ -127,7 +127,7 @@ namespace PS1B___Tema_10___Ciobanu_Victor
                         hash.Add(count, 1);
                     }
                     error_sum += Math.Abs(x1 - Math.Sqrt(number));
-                    progressBar1.PerformStep();
+                    progressBar.PerformStep();
                 }
                 foreach (var series in chart.Series)
                 {
@@ -138,7 +138,7 @@ namespace PS1B___Tema_10___Ciobanu_Victor
                     chart.Series["Iterations"].Points.AddXY(pair.Key, pair.Value);
                     sum += pair.Key * pair.Value;
                 }
-                textAvg_diff.Text = Convert.ToString(error_sum / nr_values);
+                textAvg_error.Text = Convert.ToString(error_sum / nr_values);
                 textAvg_iterations.Text = Convert.ToString(sum / nr_values);
             }
         }
