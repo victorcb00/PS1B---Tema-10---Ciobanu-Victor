@@ -20,5 +20,11 @@ namespace PS1B___Tema_10___Ciobanu_Victor
 				count++;
 			} while (Math.Abs(x1 - x0) > error);
 		}
-    }
+
+		public static double GetRandomNumber(double minimum, double maximum)
+		{
+			Random random = new Random();
+			return random.NextDouble() * (maximum - minimum) + minimum;
+		}
+	}
 }

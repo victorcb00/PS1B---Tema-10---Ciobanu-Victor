@@ -9,3 +9,4 @@ D:\Universitate\Lectii\Semestrul 2\PS1B\PS1B - Tema 10 - Ciobanu Victor\PS1B - T
 D:\Universitate\Lectii\Semestrul 2\PS1B\PS1B - Tema 10 - Ciobanu Victor\PS1B - Tema 10 - Ciobanu Victor\obj\Debug\PS1B - Tema 10 - Ciobanu Victor.csproj.CoreCompileInputs.cache
 D:\Universitate\Lectii\Semestrul 2\PS1B\PS1B - Tema 10 - Ciobanu Victor\PS1B - Tema 10 - Ciobanu Victor\obj\Debug\PS1B - Tema 10 - Ciobanu Victor.exe
 D:\Universitate\Lectii\Semestrul 2\PS1B\PS1B - Tema 10 - Ciobanu Victor\PS1B - Tema 10 - Ciobanu Victor\obj\Debug\PS1B - Tema 10 - Ciobanu Victor.pdb
+D:\Universitate\Lectii\Semestrul 2\PS1B\PS1B - Tema 10 - Ciobanu Victor\PS1B - Tema 10 - Ciobanu Victor\obj\Debug\PS1B___Tema_10___Ciobanu_Victor.Form2.resources
