@@ -73,7 +73,7 @@ namespace PS1B___Tema_10___Ciobanu_Victor
             }
             if (!int.TryParse(textNr_values.Text, out nr_values))
             {
-                errorProvider3.SetError(textNr_values, "NaN");
+                errorProvider3.SetError(textNr_values, "Not an integer");
             }
             else
             {
@@ -108,6 +108,10 @@ namespace PS1B___Tema_10___Ciobanu_Victor
             int count = 0;
             Dictionary<int, int> hash = new Dictionary<int, int>();
 
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = nr_values + 1;
+            progressBar1.Value = 0;
+            progressBar1.Step = 1;
             if (val1 && val2 && val3 && val4)
             {
                 for (int i = 0; i < nr_values; i++)
@@ -123,6 +127,7 @@ namespace PS1B___Tema_10___Ciobanu_Victor
                         hash.Add(count, 1);
                     }
                     error_sum += Math.Abs(x1 - Math.Sqrt(number));
+                    progressBar1.PerformStep();
                 }
                 foreach (var series in chart.Series)
                 {
