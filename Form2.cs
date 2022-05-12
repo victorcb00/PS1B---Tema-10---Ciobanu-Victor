@@ -61,14 +61,22 @@ namespace PS1B___Tema_10___Ciobanu_Victor
             }
             else
             {
-                if (min_value < 0)
+                if (max_value < 0)
                 {
                     errorProvider2.SetError(textMax_value, "Negative number");
                 }
                 else
                 {
                     errorProvider2.Clear();
-                    val2 = true;
+                    if (max_value < min_value)
+                    {
+                        errorProvider2.SetError(textMax_value, "Number less than min_value");
+                    }
+                    else
+                    {
+                        errorProvider2.Clear();
+                        val2 = true;
+                    }
                 }
             }
             if (!int.TryParse(textNr_values.Text, out nr_values))
