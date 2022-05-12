@@ -23,7 +23,7 @@ namespace PS1B___Tema_10___Ciobanu_Victor
 
 		public static double GetRandomNumber(double minimum, double maximum)
 		{
-			Random random = new Random();
+			Random random = new Random(Guid.NewGuid().GetHashCode());
 			return random.NextDouble() * (maximum - minimum) + minimum;
 		}
 	}
